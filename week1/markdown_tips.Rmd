@@ -1,0 +1,51 @@
+---
+Week: 1
+Lecture: Lecture 2.1
+Topic: RMarkdown tips
+Instructor: Lauren Nelson MPH; Will Wheeler, PhD, MPH; Lawrence Tello, MPH
+Course: Intro to R, PHW 251
+Tags: R, RStudio, Markdown
+---
+
+# R markdown Tips
+
+## Code blocks
+
+Also called chunks
+
+```{r example1}
+
+# code chunk of R, first argument allows you to name the chunk, enables easier navigation of the document
+# this chunk is named chunk1 (above)
+
+```
+
+### Echo
+
+```{r, echo=FALSE}
+
+# this would display the code when set to true (default), so set to false will just show the output/results of the code
+
+```
+
+### Eval
+
+```{r, eval=FALSE}
+
+# this would not run the code chunk when putting together the entire markdown doc, default is true
+
+```
+
+### include
+
+```{r, include=FALSE}
+
+# this will still evaluate/run the code, but it won't show the output or code in the resulting document
+
+```
+
+## Word Wrap on the markdown
+
+RStudio > Global Options > Code > Display > Enable Show Margin
+
+This will show the page margin on the code editor, default is 80 characters
